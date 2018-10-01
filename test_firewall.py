@@ -2,7 +2,7 @@ import unittest
 from firewall import Firewall
 class TestFireWall(unittest.TestCase):
 
-    def test(self):
+    def test_packet(self):
         fw = Firewall('input.csv')
         self.assertTrue(fw.accept_packet("inbound","udp","80","192.168.1.6"),True)
         self.assertTrue(fw.accept_packet("outbound","tcp","25","173.177.2.3"),True)

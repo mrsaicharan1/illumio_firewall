@@ -11,9 +11,8 @@ class Firewall:
             header = next(csv_reader)
             for row in csv_reader: # looping through the csv file
                 if direction == row[0] and protocol == row[1] and self.valid_port(port,row[2]) and self.valid_ip(ip_address,row[3]):
-                    return True
-                else:
-                    line_count+=1
+                    return True # if the packet is valid, return True
+
         return False
 
     def valid_ip(self,ip_packet,ip_input):
@@ -22,10 +21,6 @@ class Firewall:
 
             min_ip = ip_split[0]
             max_ip = ip_split[1]
-            # print('Min IP: '+min_ip)
-            # print('Type'+str(type(min_ip)))
-            # print('Max_IP: '+max_ip)
-            # print('Type'+str(type(max_ip)))
 
             # store individual octets of packet and ranges in a list
             min_ip_octets = min_ip.split('.')
@@ -57,11 +52,6 @@ class Firewall:
             else:
                 return False
 
-
-
-
-
-
     def valid_port(self,port_packet,port_input):
         if '-' in port_input: #if port is given as a range(csv)
 
@@ -70,7 +60,6 @@ class Firewall:
 
             port_min=port_split[0]
             port_max=port_split[1]
-
 
             if int(port_packet)<=int(port_max) and int(port_packet)>=int(port_min): # check if packet port lies in the range
                 return True
