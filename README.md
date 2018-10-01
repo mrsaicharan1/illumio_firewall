@@ -36,7 +36,7 @@ Testing for the Firewall class and its usage has been done using the best practi
 ## Further Refinements and Optimizations
 Due to the time constraint, I wasn't able to implement a few more helpful scripts and also optimize the existing methods. Some of them are mentioned below.
     1. The IP address could've been declared as a separate class with methods for obtaining different octets and also checking if it lies in a given range.
-    2. I had also thought of writing a script to generate 50K csv values and write them to a csv file to test the firewall class.
+    2. I had also thought of writing a script to generate 500K-1M csv values and write them to a csv file to test the firewall class.
 
 
 ## Prospective Teams I would want to work with
