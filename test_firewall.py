@@ -9,5 +9,6 @@ class TestFireWall(unittest.TestCase):
         self.assertFalse(fw.accept_packet("inbound","udp","9","192.167.1.6"),False)
         self.assertFalse(fw.accept_packet("inbound","udp","72","192.158.1.6"),False)
 
+
 if __name__ == "__main__":
     unittest.main()
