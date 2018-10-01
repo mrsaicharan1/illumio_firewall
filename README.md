@@ -14,7 +14,7 @@ This project requires the following dependencies:
 
 ### Running the script
 
-1. To run the it on the Python REPL, fire up the terminal and run python3 shell.
+1. To run it on the Python REPL, fire up the terminal and run python3 shell.
 2. You'd first want to import the Firewall class using `from firewall import Firewall`
 3. Then you'd want to instantiate an object using `fw = Firewall('input.csv')` [here input.csv is your input file]
 4. Now you can use the firewall methods.
