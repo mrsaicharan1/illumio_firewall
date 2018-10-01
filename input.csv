@@ -1,0 +1,1 @@
+direction,protocol,port,ip_addressinbound,udp,80,192.168.1.5-192.168.1.7outbound,tcp,22-29,173.177.2.3-173.180.3.4outbound,tcp,111,180.23.3.4-180.23.255.255inbound,udp,123,180.2.3.4-180.1.255.255
