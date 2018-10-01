@@ -31,7 +31,7 @@ Testing for the Firewall class and its usage has been done using the best practi
 
 4. If the input didn't contain ranges, I had written code to assert them directly.
 
-5. Initially i used a line_count parameter to omit the first row in the csv file by incrementing it each time because that would contain the column names. Then I realized that if I perform this check in a loop for around 500K inputs, it would drastically affect the performance. I was able to curb this by automatically running the loop from the second input by using the csv module's `next` method.(Took care of redundant operations)
+5. Initially I used a line_count parameter. The loop would check if the line_count is at 0 and omit the row at index 0 in the csv file (because this row would contain column names). Then, I realized that if I perform this check in a loop for around 500K inputs, it would drastically affect the performance(Check if the line_count is at 0 for 500K times). I was able to get around these redundant operations by automatically running the loop from the second input by using the csv module's `next` method.
 
 ## Further Refinements and Optimizations
 Due to the time constraint, I wasn't able to implement a few more helpful scripts and also optimize the existing methods. Some of them are mentioned below.
