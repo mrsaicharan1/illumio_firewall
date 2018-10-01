@@ -41,7 +41,7 @@ Due to the time constraint, I wasn't able to implement a few more helpful script
 
 ## Prospective Teams I would want to work with
 
-I've always been interested in data analysis and performing actions which would resonate with its security using various techniques such as visualisation. I would love to work on the data team and prove my worth if I were given a opportunity for the same.
+I've always been interested in data analysis and performing actions which would resonate with its security using various techniques such as visualisation. I would love to work on the data team and prove my worth if I were given an opportunity for the same.
 
 ## Authors
 
